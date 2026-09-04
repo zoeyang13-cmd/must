@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生涯航行：未知的地圖 - 生涯調適力實驗</title>
+    <title>生涯航行:未知的地圖 - 生涯調適力實驗</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
@@ -73,21 +73,21 @@
 
 <div class="game-container">
     <div id="start-screen">
-        <h1>《生涯航行：未知的地圖》</h1>
+        <h1>《生涯航行:未知的地圖》</h1>
         <p>一場關於探索「生涯調適力 (Career Adaptability)」的實驗</p>
         <div class="concept-card">
             <span class="concept-title">📘 生涯調適力四大引擎說明</span>
-            <div class="def-item">🔭 <strong>關注 (Concern)</strong>：向前看，為即將面臨的生涯事件做準備，如規劃課業、社團活動等。</div>
-            <div class="def-item">☸️ <strong>控制 (Control)</strong>：透過自律和努力，對自我形塑和環境負責，即使疲憊也能整理與反思生涯經驗。</div>
-            <div class="def-item">🧭 <strong>好奇 (Curiosity)</strong>：保持對新事物的好奇心，以正面眼光看待生涯嘗試，激發探索動力。</div>
-            <div class="def-item">💪 <strong>自信 (Confidence)</strong>：透過探索和資訊收集，累積熱情與能力，有信心迎接未知挑戰，並實踐自我認同的生涯。</div>
+            <div class="def-item">🔭 <strong>關注 (Concern)</strong>:向前看,為即將面臨的生涯事件做準備,如規劃課業、社團活動等。</div>
+            <div class="def-item">☸️ <strong>控制 (Control)</strong>:透過自律和努力,對自我形塑和環境負責,即使疲憊也能整理與反思生涯經驗。</div>
+            <div class="def-item">🧭 <strong>好奇 (Curiosity)</strong>:保持對新事物的好奇心,以正面眼光看待生涯嘗試,激發探索動力。</div>
+            <div class="def-item">💪 <strong>自信 (Confidence)</strong>:透過探索和資訊收集,累積熱情與能力,有信心迎接未知挑戰,並實踐自我認同的生涯。</div>
         </div>
         
         <div class="instruction-box">
-            📢 填答說明：請依據您的真實感受，點選「最接近」或「最符合」您現況的想法。
+            📢 填答說明:請依據您的真實感受,點選「最接近」或「最符合」您現況的想法。
         </div>
         
-        <button class="start-btn" onclick="startGame()">啟航：開始實驗</button>
+        <button class="start-btn" onclick="startGame()">啟航:開始實驗</button>
     </div>
 
     <div id="game-screen" class="hidden">
@@ -109,7 +109,7 @@
         <h1>航行分析報告</h1>
         <div class="concept-card" style="font-size: 0.9em;">
             <span class="concept-title">📍 生涯調適力 (Career Adaptability) 總結</span>
-            這些數值反映了您在不斷變動的生命地圖中，如何調整自我狀態以轉化生涯中的各項挑戰。
+            這些數值反映了您在不斷變動的生命地圖中,如何調整自我狀態以轉化生涯中的各項挑戰。
         </div>
         <div class="chart-container"><canvas id="adaptChart"></canvas></div>
         
@@ -117,10 +117,10 @@
 
         <div style="margin-top: 40px; padding: 25px; border: 2px dashed var(--accent); border-radius: 10px; background: #fffcf5; text-align: left;">
             <h3 style="text-align: center; color: var(--accent); margin-top:0;">✍️ 徵文競賽報名</h3>
-            <p><strong>請務必先將本頁面的「雷達圖與分析結果」截圖保存！</strong></p>
-            <p>運用分析中的 4C 優勢，寫下約 200 字的心路歷程。活動期間：115.3.2 - 4.10。</p>
+            <p><strong>請務必先將本頁面的「雷達圖與分析結果」截圖保存!</strong></p>
+            <p>運用分析中的 4C 優勢,寫下約 200 字的心路歷程。活動期間:115.3.2 - 4.10。</p>
             <div style="text-align: center;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScEeaKqSMlbtkh_eWfHQ0vmHHR4hUwyZftDm1F7_jxjgqkoOg/viewform?usp=header" target="_blank" class="start-btn">點我提交心得並報名</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScEeaKqSMlbtkh_eWfHQ0vmHHR4hUwyZftDm1F7_jxjgqkoOg/viewform?usp=header" target="_blank" class="start-btn" style="display:none;">點我提交心得並報名</a>
             </div>
         </div>
         <button class="start-btn" style="background: #95a5a6; margin-top: 20px;" onclick="location.reload()">重新探索</button>
@@ -129,53 +129,53 @@
 
 <script>
     const allEvents = [
-        { q: "1. 學校開了一門關於 AI 應用或跨領域的新技術課，你的反應是？", options: [
+        { q: "1. 學校開了一門關於 AI 應用或跨領域的新技術課,你的反應是?", options: [
             { text: "評估這項技術與我長期職涯目標的契合度再決定", type: "concern" },
-            { text: "先觀望技術的實際效益，不想在尚未準備好時投入精力", type: "curiosity" },
-            { text: "相信自己有能力快速掌握新工具，直接上手學習", type: "confidence" }
+            { text: "先觀望技術的實際效益,不想在尚未準備好時投入精力", type: "curiosity" },
+            { text: "相信自己有能力快速掌握新工具,直接上手學習", type: "confidence" }
         ]},
-        { q: "2. 如果原本申請到的校外實習機會突然取消了，你會？", options: [
-            { text: "這代表需要先停下來，重新消化這份不確定感與壓力", type: "confidence" },
+        { q: "2. 如果原本申請到的校外實習機會突然取消了,你會?", options: [
+            { text: "這代表需要先停下來,重新消化這份不確定感與壓力", type: "confidence" },
             { text: "視為探索其他全然不同領域或新方向的好契機", type: "curiosity" },
-            { text: "立刻檢索其他備案，快速啟動替代行動方案", type: "concern" }
+            { text: "立刻檢索其他備案,快速啟動替代行動方案", type: "concern" }
         ]},
-        { q: "3. 面對快速變遷的社會環境，你通常如何看待『五年後的自己』？", options: [
-            { text: "我傾向專注於眼下的穩定，不刻意預設長遠的變動", type: "control" },
-            { text: "我對未來保持高度好奇，期待嘗試各種跨界的可能", type: "curiosity" },
-            { text: "我會系統性地收集趨勢資訊，為可能的情況提前佈局", type: "concern" }
+        { q: "3. 面對快速變遷的社會環境,你通常如何看待『五年後的自己』?", options: [
+            { text: "我傾向專注於眼下的穩定,不刻意預設長遠的變動", type: "control" },
+            { text: "我對未來保持高度好奇,期待嘗試各種跨界的可能", type: "curiosity" },
+            { text: "我會系統性地收集趨勢資訊,為可能的情況提前佈局", type: "concern" }
         ]},
-        { q: "4. 當身邊的人對你的「生涯選擇」提出質疑或不同建議時？", options: [
-            { text: "先反思他人的切入點，看看自己是否有未察覺的遺漏", type: "confidence" },
-            { text: "列出我的長期發展規劃，用邏輯與願景說服對方", type: "concern" },
-            { text: "明確表達這是屬於我的生命主權，由我自行決定方向", type: "control" }
+        { q: "4. 當身邊的人對你的「生涯選擇」提出質疑或不同建議時?", options: [
+            { text: "先反思他人的切入點,看看自己是否有未察覺的遺漏", type: "confidence" },
+            { text: "列出我的長期發展規劃,用邏輯與願景說服對方", type: "concern" },
+            { text: "明確表達這是屬於我的生命主權,由我自行決定方向", type: "control" }
         ]},
-        { q: "5. 若遇到一個跨系合作的專案邀請，但內容是你完全沒做過的領域？", options: [
-            { text: "熱衷於這種跨界挑戰，想從中挖掘更多意想不到的可能性", type: "curiosity" },
-            { text: "先確認現有專業是否能負荷，避免在風險過高時貿然嘗試", type: "confidence" },
-            { text: "判斷此專案對未來履歷的佈局價值，若有利則優先參與", type: "concern" }
+        { q: "5. 若遇到一個跨系合作的專案邀請,但內容是你完全沒做過的領域?", options: [
+            { text: "熱衷於這種跨界挑戰,想從中挖掘更多意想不到的可能性", type: "curiosity" },
+            { text: "先確認現有專業是否能負荷,避免在風險過高時貿然嘗試", type: "confidence" },
+            { text: "判斷此專案對未來履歷的佈局價值,若有利則優先參與", type: "concern" }
         ]},
-        { q: "6. 在一次重要的比賽或選拔中失利後，你通常會如何處理？", options: [
-            { text: "深呼吸並整理經驗，主動找尋改進現狀的行動主導權", type: "control" },
-            { text: "這只是一場實驗，相信這次經驗會成為未來成功的底氣", type: "confidence" },
-            { text: "隨緣應對，相信環境的安排自有道理，不強求特定規劃", type: "concern" }
+        { q: "6. 在一次重要的比賽或選拔中失利後,你通常會如何處理?", options: [
+            { text: "深呼吸並整理經驗,主動找尋改進現狀的行動主導權", type: "control" },
+            { text: "這只是一場實驗,相信這次經驗會成為未來成功的底氣", type: "confidence" },
+            { text: "隨緣應對,相信環境的安排自有道理,不強求特定規劃", type: "concern" }
         ]},
-        { q: "7. 選課時面對「平穩的必修課」與「具挑戰性的跨域專題」，你會選？", options: [
-            { text: "選專題，因為我想要主導並親手產出屬於自己的獨特作品", type: "control" },
-            { text: "選必修課，確保我能穩定地將精力分配在現有的既定計畫上", type: "control" },
-            { text: "選跨域，藉此擴張我的認知邊界，看看能學到什麼新東西", type: "curiosity" }
+        { q: "7. 選課時面對「平穩的必修課」與「具挑戰性的跨域專題」,你會選?", options: [
+            { text: "選專題,因為我想要主導並親手產出屬於自己的獨特作品", type: "control" },
+            { text: "選必修課,確保我能穩定地將精力分配在現有的既定計畫上", type: "control" },
+            { text: "選跨域,藉此擴張我的認知邊界,看看能學到什麼新東西", type: "curiosity" }
         ]},
-        { q: "8. 看到同儕紛紛拿到知名企業的錄取通知，而你還在尋找時？", options: [
-            { text: "重新審視我的生涯地圖，確認目前的進度是否還在軌道內", type: "concern" },
-            { text: "接受目前的緩慢進度，這也是成長中難免的被動沉澱期", type: "control" },
-            { text: "對未知的空白感到期待，相信後續會有更適合的機會出現", type: "curiosity" }
+        { q: "8. 看到同儕紛紛拿到知名企業的錄取通知,而你還在尋找時?", options: [
+            { text: "重新審視我的生涯地圖,確認目前的進度是否還在軌道內", type: "concern" },
+            { text: "接受目前的緩慢進度,這也是成長中難免的被動沉澱期", type: "control" },
+            { text: "對未知的空白感到期待,相信後續會有更適合的機會出現", type: "curiosity" }
         ]},
-        { q: "9. 自主學習新技能卻遇到瓶頸、進度嚴重落後時，你會？", options: [
-            { text: "若短期成效不明顯，會考慮重新配置資源到更有把握的事上", type: "curiosity" },
-            { text: "相信只要保持探索的初衷，一定能重新找回突破的熱情", type: "confidence" },
-            { text: "冷靜拆解難點，重新調整學習節奏，對自己的進度負責", type: "control" }
+        { q: "9. 自主學習新技能卻遇到瓶頸、進度嚴重落後時,你會?", options: [
+            { text: "若短期成效不明顯,會考慮重新配置資源到更有把握的事上", type: "curiosity" },
+            { text: "相信只要保持探索的初衷,一定能重新找回突破的熱情", type: "confidence" },
+            { text: "冷靜拆解難點,重新調整學習節奏,對自己的進度負責", type: "control" }
         ]},
-        { q: "10. 在你心中，這場名為生涯的實驗最重要的裝備是？", options: [
-            { text: "隨時更新的精準地圖，以及對環境變化的敏銳預警", type: "concern" },
+        { q: "10. 在你心中,這場名為生涯的實驗最重要的裝備是?", options: [
+            { text: "隨時更新的精準地圖,以及對環境變化的敏銳預警", type: "concern" },
             { text: "握穩船舵、對自我的方向與行為完全負責的意志力", type: "control" },
             { text: "相信自己能克服萬難、最終實踐自我認同的信念", type: "confidence" }
         ]}
@@ -190,33 +190,33 @@
             name: "關注 (Concern)", 
             icon: "🔭", 
             color: "#3498db", 
-            pros: "您擁有一雙望向未來的遠見之眼，能細心地為生涯旅程中的各種轉折提前佈局。", 
-            cons: "當我們太過專注於尚未發生的變動時，內心偶爾會浮現一些細微的焦慮或負擔。", 
-            guide: "或許可以試著將長遠的願景化作當下的一個個小腳印，讓對未來的關懷成為支持您前進的暖流。" 
+            pros: "您擁有一雙望向未來的遠見之眼,能細心地為生涯旅程中的各種轉折提前佈局。", 
+            cons: "當我們太過專注於尚未發生的變動時,內心偶爾會浮現一些細微的焦慮或負擔。", 
+            guide: "或許可以試著將長遠的願景化作當下的一個個小腳印,讓對未來的關懷成為支持您前進的暖流。" 
         },
         control: { 
             name: "控制 (Control)", 
             icon: "☸️", 
             color: "#e74c3c", 
-            pros: "您在整理生涯經驗時展現了珍貴的自律與反省，這讓您在面對環境時更有自我形塑的力量。", 
-            cons: "生命中難免有無法撼動的時刻，這些不確定性有時會讓習慣掌握舵盤的您感到些許受挫。", 
-            guide: "在無法掌握的大環境中，我們可以試著在日常生活的小細節裡溫柔地找回控制感，專注於當下的自我安穩。" 
+            pros: "您在整理生涯經驗時展現了珍貴的自律與反省,這讓您在面對環境時更有自我形塑的力量。", 
+            cons: "生命中難免有無法撼動的時刻,這些不確定性有時會讓習慣掌握舵盤的您感到些許受挫。", 
+            guide: "在無法掌握的大環境中,我們可以試著在日常生活的小細節裡溫柔地找回控制感,專注於當下的自我安穩。" 
         },
         curiosity: { 
             name: "好奇 (Curiosity)", 
             icon: "🧭", 
             color: "#f1c40f", 
-            pros: "您擁有一顆純粹的探索之心，能帶著正向的眼光去挖掘生命中各種未知的可能性。", 
-            cons: "當生涯地圖上出現過多吸引人的路徑時，我們有時會稍微迷失方向，較難安穩地扎根成長。", 
-            guide: "在豐富的探索過後，給自己一點安靜的空間去沈澱與整理，將這些寶貴的發現揉合成您獨特的生涯能量。" 
+            pros: "您擁有一顆純粹的探索之心,能帶著正向的眼光去挖掘生命中各種未知的可能性。", 
+            cons: "當生涯地圖上出現過多吸引人的路徑時,我們有時會稍微迷失方向,較難安穩地扎根成長。", 
+            guide: "在豐富的探索過後,給自己一點安靜的空間去沈澱與整理,將這些寶貴的發現揉合成您獨特的生涯能量。" 
         },
         confidence: { 
             name: "自信 (Confidence)", 
             icon: "💪", 
             color: "#2ecc71", 
-            pros: "您對實踐自我認同的生涯抱持著溫暖的信心，這份信念是您迎接未知挑戰時最強大的後盾。", 
-            cons: "這份勇敢有時會讓我們走得太急，而忽略了沿途細微的信號或身邊前輩們的溫馨提醒。", 
-            guide: "我們可以試著將這份信心與實務經驗溫柔地對話，透過每一次小小的實踐累積，讓生涯的根基長得更深、更穩。" 
+            pros: "您對實踐自我認同的生涯抱持著溫暖的信心,這份信念是您迎接未知挑戰時最強大的後盾。", 
+            cons: "這份勇敢有時會讓我們走得太急,而忽略了沿途細微的信號或身邊前輩們的溫馨提醒。", 
+            guide: "我們可以試著將這份信心與實務經驗溫柔地對話,透過每一次小小的實踐累積,讓生涯的根基長得更深、更穩。" 
         }
     };
 
@@ -228,7 +228,7 @@
 
     function showEvent() {
         const event = allEvents[currentRound];
-        document.getElementById('progress-text').textContent = `航行進度：${currentRound + 1} / ${allEvents.length}`;
+        document.getElementById('progress-text').textContent = `航行進度:${currentRound + 1} / ${allEvents.length}`;
         document.getElementById('question-text').textContent = event.q;
         const container = document.getElementById('options-container');
         container.innerHTML = '';
@@ -294,14 +294,14 @@
         let lowestScore = Math.min(stats.concern, stats.control, stats.curiosity, stats.confidence);
         let summaryText = "";
         if (lowestScore >= 85) {
-            summaryText = "哇！看來你目前的四大生涯引擎都運作得非常出色呢。這種均衡的能量，能讓你更從容地應對各種變動。繼續保持這份節奏，享受你的航行吧！";
+            summaryText = "哇!看來你目前的四大生涯引擎都運作得非常出色呢。這種均衡的能量,能讓你更從容地應對各種變動。繼續保持這份節奏,享受你的航行吧!";
         } else {
-            summaryText = "在生涯的航行中，這四大引擎就像是船隻的零件，只要其中一個暫時動力稍弱，航行起來可能就會感覺稍微吃力一些。這並不是代表你做得不夠好，而是提醒我們可以停下來，給那個「稍微累了」的能力一點點養分和關注，讓未來的旅程能走得更順暢、更穩健。";
+            summaryText = "在生涯的航行中,這四大引擎就像是船隻的零件,只要其中一個暫時動力稍弱,航行起來可能就會感覺稍微吃力一些。這並不是代表你做得不夠好,而是提醒我們可以停下來,給那個「稍微累了」的能力一點點養分和關注,讓未來的旅程能走得更順暢、更穩健。";
         }
 
         const summaryBox = document.createElement('div');
         summaryBox.style.cssText = "grid-column: 1 / -1; background: #fff; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 6px solid #e67e22; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; line-height: 1.6; color: #555;";
-        summaryBox.innerHTML = `<strong>⛵️ 給船長的小結語：</strong><br>${summaryText}`;
+        summaryBox.innerHTML = `<strong>⛵️ 給船長的小結語:</strong><br>${summaryText}`;
         detailArea.appendChild(summaryBox);
 
         for (let key in stats) {
@@ -312,11 +312,11 @@
             card.innerHTML = `
                 <h3>${info.icon} ${info.name} <span class="c-tag" style="background:${info.color}">${stats[key]}分</span></h3>
                 <div style="font-size:0.95em; line-height: 1.6;">
-                    <strong>🌟 特色發現：</strong>${info.pros}<br><br>
-                    <strong>💭 小小提醒：</strong>${info.cons}
+                    <strong>🌟 特色發現:</strong>${info.pros}<br><br>
+                    <strong>💭 小小提醒:</strong>${info.cons}
                 </div>
                 <div class="guide-text">
-                    <strong>🌱 生涯發展的小建議：</strong><br>${info.guide}
+                    <strong>🌱 生涯發展的小建議:</strong><br>${info.guide}
                 </div>
             `;
             detailArea.appendChild(card);
@@ -324,7 +324,7 @@
 
         const noteBox = document.createElement('div');
         noteBox.style.cssText = "grid-column: 1 / -1; font-size: 0.85em; color: #888; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 15px;";
-        noteBox.innerHTML = "💡 溫馨備註：這場小遊戲是一次簡單的心靈實驗，並非正式的心理測驗。結果僅供參考，每個人在不同階段的狀態本來就會起起伏伏，請不要過於介意分數唷！最重要的還是你對自己生活的真實感受。";
+        noteBox.innerHTML = "💡 溫馨備註:這場小遊戲是一次簡單的心靈實驗,並非正式的心理測驗。結果僅供參考,每個人在不同階段的狀態本來就會起起伏伏,請不要過於介意分數唷!最重要的還是你對自己生活的真實感受。";
         detailArea.appendChild(noteBox);
     }
 </script>
